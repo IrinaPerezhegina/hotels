@@ -9,7 +9,7 @@ function myFilter(array, callback) {
     return result;
 }
 const numbers = [1, 2, 3, 4, 5, 45, 100, 0, -100, -30, 13];
+const callback = (num) => num >= 3;
 
-const callback = (item) => item <= 3;
 console.log(myFilter(numbers, callback));
 console.log(numbers);
